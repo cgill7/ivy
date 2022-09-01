@@ -63,9 +63,12 @@
 <li class="toctree-l2"><a class="reference internal" href="deep_dive/12_docstring_examples.html">Docstring Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="deep_dive/13_array_api_tests.html">Array API Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="deep_dive/14_ivy_tests.html">Ivy Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deep_dive/15_ivy_frontends.html">Ivy Frontends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deep_dive/16_ivy_frontends_tests.html">Ivy Frontend Tests</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
@@ -76,6 +79,7 @@
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functional/ivy/extensions.html">Extensions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional/ivy/layers.html">Layers</a></li>
@@ -99,14 +103,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/optimizers.html">Optimizers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/sequential.html">Sequential</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stateful/sequential.html">Sequential</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -200,7 +204,13 @@ We’re excited for you to get involved!  🦾</p>
 <div class="line">How we’re borrowing the test suite from the Array API Standard 🤝</div>
 <div class="line"><br /></div>
 <div class="line">(o) <a class="reference internal" href="deep_dive/14_ivy_tests.html#ivy-tests"><span class="std std-ref">Ivy Tests</span></a></div>
-<div class="line">How to add new Ivy tests for each function ❓</div>
+<div class="line">How to add new tests for each Ivy function ❓</div>
+<div class="line"><br /></div>
+<div class="line">(p) <a class="reference internal" href="deep_dive/15_ivy_frontends.html#ivy-frontends"><span class="std std-ref">Ivy Frontends</span></a></div>
+<div class="line">How to implement frontend functions ➡️</div>
+<div class="line"><br /></div>
+<div class="line">(q) <a class="reference internal" href="deep_dive/16_ivy_frontends_tests.html#ivy-frontend-tests"><span class="std std-ref">Ivy Frontend Tests</span></a></div>
+<div class="line">How to add new tests for each frontend function ➡️❓</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -217,7 +227,7 @@ We’re excited for you to get involved!  🦾</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
